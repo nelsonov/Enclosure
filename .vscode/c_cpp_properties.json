@@ -1,0 +1,66 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "/home/lnelson/Documents/PlatformIO/Projects/Enclosure/include",
+                "/home/lnelson/Documents/PlatformIO/Projects/Enclosure/src",
+                "/home/lnelson/Documents/PlatformIO/Projects/Enclosure/.pio/libdeps/usbasp/Bounce2/src",
+                "/home/lnelson/Documents/PlatformIO/Projects/Enclosure/.pio/libdeps/usbasp/DHT sensor library",
+                "/home/lnelson/Documents/PlatformIO/Projects/Enclosure/.pio/libdeps/usbasp/Adafruit Unified Sensor",
+                "/home/lnelson/Documents/PlatformIO/Projects/Enclosure/.pio/libdeps/usbasp/Adafruit NeoPixel",
+                "/home/lnelson/.platformio/packages/framework-arduino-avr/cores/arduino",
+                "/home/lnelson/.platformio/packages/framework-arduino-avr/variants/mega",
+                "/home/lnelson/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                "/home/lnelson/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                "/home/lnelson/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                "/home/lnelson/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                "/home/lnelson/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                "/home/lnelson/.platformio/packages/tool-unity",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "/home/lnelson/Documents/PlatformIO/Projects/Enclosure/include",
+                    "/home/lnelson/Documents/PlatformIO/Projects/Enclosure/src",
+                    "/home/lnelson/Documents/PlatformIO/Projects/Enclosure/.pio/libdeps/usbasp/Bounce2/src",
+                    "/home/lnelson/Documents/PlatformIO/Projects/Enclosure/.pio/libdeps/usbasp/DHT sensor library",
+                    "/home/lnelson/Documents/PlatformIO/Projects/Enclosure/.pio/libdeps/usbasp/Adafruit Unified Sensor",
+                    "/home/lnelson/Documents/PlatformIO/Projects/Enclosure/.pio/libdeps/usbasp/Adafruit NeoPixel",
+                    "/home/lnelson/.platformio/packages/framework-arduino-avr/cores/arduino",
+                    "/home/lnelson/.platformio/packages/framework-arduino-avr/variants/mega",
+                    "/home/lnelson/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                    "/home/lnelson/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                    "/home/lnelson/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                    "/home/lnelson/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                    "/home/lnelson/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                    "/home/lnelson/.platformio/packages/tool-unity",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=50203",
+                "ARDUINO_AVR_MEGA2560",
+                "F_CPU=8000000L",
+                "ARDUINO_ARCH_AVR",
+                "ARDUINO=10808",
+                "__AVR_ATmega2560__",
+                ""
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "compilerPath": "/home/lnelson/.platformio/packages/toolchain-atmelavr@1.70300.191015/bin/avr-gcc",
+            "compilerArgs": [
+                "-mmcu=atmega2560",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}
