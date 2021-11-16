@@ -36,8 +36,11 @@
 #endif
 
 bool justBooted = true;
-int delaytime = 500;
+volatile int delaytime = 500;
 void setup () {
+#ifdef AVRDEBUG
+    debug_init();
+#endif
 #ifndef AVRDEBUG
     Serial.begin(9600);
 #endif
@@ -65,4 +68,4 @@ void loop () {
     digitalWrite (BOARD_LED, LOW);
     DEBUGMSG("Off\n");
     delay (delaytime);
-};
+}
