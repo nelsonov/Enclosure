@@ -6,19 +6,30 @@
 //#define PIXEL_PIN 10
 //#define PIXEL_COUNT 60
 
+//If we are using an RGBW instead of RGB strip, define that here
 #define STRIP_RGBW
+
+//If we are in arvdebug environment, then include necessary headers
+//and define DEBUGMSG macro to use avr-stub's debug_message since
+//Serial() is unavailable in this environment
 #ifdef AVRDEBUG
 #include "avr8-stub.h"
 //#include "app_api.h" // only needed with flash breakpoints
 #define DEBUGMSG(m) debug_message(m)
+//If we are not in avrdebug, then define DEBUGMSG macro to 
+//use Serial.print();
 #else
 #define DEBUGMSG(m) Serial.print(m)
 #endif
 #define BOARD_LED 13
 
+//If we are using an RGBW strip, then set PIXELCOLOR macro to use
+//all args and create the proper object for RGBW
 #ifdef STRIP_RGBW
 #define PIXELCOLOR(n, r, g, b, w) strip.setPixelColor(n, r, g, b, w);
 //Adafruit_NeoPixel strip(PIXEL_COUNT, PIXEL_PIN, NEO_RGBW + NEO_KHZ800);
+//IF using a "normal" RGB strip, then the PIXELCOLOR macro to
+//ignore the 5th (white) argument. Also create an object for RGB
 #else
 #define PIXELCOLOR(n, r, g, b, w) strip.setPixelColor(n, r, g, b);
 //Adafruit_NeoPixel strip(PIXEL_COUNT, PIXEL_PIN);
