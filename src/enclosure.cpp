@@ -3,6 +3,7 @@
 #include <Bounce2.h>
 #include <Adafruit_NeoPixel.h>
 #include <DHT.h>
+#include "pins.h"
 #define PIXEL_PIN 10
 #define PIXEL_COUNT 60
 
