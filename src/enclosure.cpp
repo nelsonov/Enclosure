@@ -18,7 +18,7 @@
 #define DEBUGMSG(m) Serial.print(m)
 #endif
 #define BOARD_LED 13
-volatile int pixcount = 30;
+volatile int pixcount = 80;
 #ifdef STRIP_RGBW
 Adafruit_NeoPixel lightPixels(NEOPIXEL1_COUNT, NEOPIXEL1, NEO_RGBW + NEO_KHZ800);
 #else
@@ -27,6 +27,7 @@ Adafruit_NeoPixel lightPixels(NEOPIXEL1_COUNT, NEOPIXEL1);
 Adafruit_NeoPixel statusPixels(NEOPIXEL2_COUNT, NEOPIXEL2);
 
 uint32_t cold=lightPixels.Color(0,0,128,0);
+uint32_t light=lightPixels.Color(0,0,0,200);
 bool justBooted = true;
 volatile int delaytime = 100;
 volatile int bytecolor=1;
@@ -48,7 +49,7 @@ void loop () {
         justBooted = false;
         DEBUGMSG("Starting\n");
     }
-    lightPixels.fill(cold, 1, pixcount);
+    lightPixels.fill(light, 1, pixcount);
 //    lightPixels.setPixelColor(1, 0, 0, 0, 128);
 //    lightPixels.setPixelColor(2, 0, 0, bytecolor, 0);
 //    lightPixels.setPixelColor(3, 0, bytecolor, 0, 0);
