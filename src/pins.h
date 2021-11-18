@@ -18,5 +18,5 @@
 #define AUXPWR              50 // 2560
 #define STATDEBUG           11 // ESP32 GPIO 27
 
-#define NEOPIXEL1_COUNT 8
+#define NEOPIXEL1_COUNT 86
 #define NEOPIXEL2_COUNT 8
