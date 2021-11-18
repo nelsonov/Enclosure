@@ -21,7 +21,6 @@
                 "/home/lnelson/.platformio/packages/framework-arduino-avr/libraries/HID/src",
                 "/home/lnelson/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
                 "/home/lnelson/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
-                "/home/lnelson/.platformio/packages/tool-unity",
                 ""
             ],
             "browse": {
@@ -40,12 +39,11 @@
                     "/home/lnelson/.platformio/packages/framework-arduino-avr/libraries/HID/src",
                     "/home/lnelson/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
                     "/home/lnelson/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
-                    "/home/lnelson/.platformio/packages/tool-unity",
                     ""
                 ]
             },
             "defines": [
-                "PLATFORMIO=50203",
+                "PLATFORMIO=50202",
                 "ARDUINO_AVR_MEGA2560",
                 "STRIP_RGBW",
                 "F_CPU=16000000L",
@@ -56,7 +54,7 @@
             ],
             "cStandard": "c11",
             "cppStandard": "c++11",
-            "compilerPath": "/home/lnelson/.platformio/packages/toolchain-atmelavr@1.70300.191015/bin/avr-gcc",
+            "compilerPath": "/home/lnelson/.platformio/packages/toolchain-atmelavr/bin/avr-gcc",
             "compilerArgs": [
                 "-mmcu=atmega2560",
                 ""
